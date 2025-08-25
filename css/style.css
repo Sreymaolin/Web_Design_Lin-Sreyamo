@@ -488,7 +488,12 @@ body {
   .value_section {
     padding: 100px 50px;
   }
+  body { font-size: 1rem; }
+  .header h1 { font-size: 3rem; }
+  .value_section { padding: 100px 50px; }
+  
 }
+
 /* Tablet (768px - 1024px) */
 @media (max-width: 1024px) {
   .nav {
@@ -529,6 +534,16 @@ body {
   .food-card {
     width: 80%;
   }
+  .nav { flex-wrap: wrap; justify-content: center; }
+  .header h1 { font-size: 2rem; top: 25%; }
+  .header p { font-size: 0.9rem; padding: 10px 15px; }
+  .value_section { padding: 60px 20px; gap: 15px; }
+  .sports_section, .aerobic-gallery {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .schedule-table { width: 95%; font-size: 0.9rem; }
+  .food-gallery { flex-direction: column; align-items: center; }
+  .food-card { width: 80%; }
 }
 
 /* Phone (<=767px) */
@@ -606,4 +621,20 @@ body {
     grid-template-columns: 1fr;
     text-align: center;
   }
+  .nav { flex-direction: column; padding: 15px; }
+  .nav img { margin-bottom: 10px; }
+  .nav a { display: block; margin: 8px 0; }
+  .header img { height: 50vh; }
+  .header h1 { font-size: 1.8rem; }
+  .header p { font-size: 0.85rem; width: 90%; }
+  .value_section { padding: 40px 20px; grid-template-columns: 1fr; }
+  .canteen-section { padding: 20px; }
+  .food-gallery { flex-direction: column; gap: 15px; }
+  .food-card { width: 100%; }
+  .sports_section { grid-template-columns: 1fr; padding: 30px 20px; }
+  .aerobic-gallery { grid-template-columns: 1fr; padding: 30px 20px; }
+  .contact_section { margin: 10px; padding: 30px 20px; }
+  .contact_section input, .contact_section button { width: 100%; }
+  .google_map_section iframe { height: 250px; }
+  .footer-container { grid-template-columns: 1fr; text-align: center; }
 }
